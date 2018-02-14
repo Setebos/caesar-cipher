@@ -1,0 +1,7 @@
+.container {
+	text-align: center;
+}
+
+#cipher-encode, #cipher-decode {
+	margin-top: 15px;
+}

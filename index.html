@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="fr" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="fr" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="fr"> <!--<![endif]-->
+<head>
+    <title>Chiffre de César</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encoder et décoder des textes avec le chiffre de César.">
+    <meta name="author" content="Setebos">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chiffre de César</h1>
+    </div>
+    <div class="container cipher-form">
+        <div class="row">
+            <h2>Résultat : </h2>
+            <p id="encrypted">khoor zruog</p>
+            
+            <h2>Texte à chiffrer/déchiffrer et clé :</h2>
+            <div class="col-md-4 col-md-offset-4">
+                <form>
+                    <label for="text">Texte</label>
+                    <textarea id="cipher-text"  name="text" class="form-control" rows="3">hello world</textarea>
+                    <label for="key">Clé</label>
+                    <input id="cipher-key" type="number" name="key" class="form-control" value="3">
+                </form>
+                <button id="cipher-encode" class="btn btn-info">Chiffrer</button>
+                <button id="cipher-decode" class="btn btn-info">Déchiffrer</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.1.1.slim.min.js"></script>
+<script src="js/cipher.js"></script>
+</html>
